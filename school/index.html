@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en_us">
+    <head>
+<meta charset="UTF-8">
+        <title>A.B.C convent school</title>
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+    <script>
+        var image=[
+            "a1.jpg",
+            "a2.jpg",
+            "a3.jpg",
+            "a4.jpg",
+            "a5.jpg"];
+            
+        var i=0;
+        function slides(){
+            document.getElementById("slideshow").src=image[i];
+            if(i<(image.length-1))
+                i++;
+            else
+                i=0;
+            
+            
+        }
+        setInterval(slides,2000);
+        
+        
+        </script>
+    
+</head>
+    <body>
+    
+    <div class="header">
+        <h1 class="para1">A.B.C Convent School</h1>
+        </div>
+        <div class="nav">
+    
+        <ul>
+        <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallary.html">Gallary</a></li>
+        
+        
+        
+        
+        </ul>
+        
+        </div>
+        <div class="slideshow">
+            <img src="a1.jpg"alt="school"id="slideshow">
+        
+        </div>
+        <div class="foot1">
+        <h5 class= "para2">Upcoming Events</h5><br>
+            <p class="para3">December</p>
+            <p class="para4">Friday 22 christmas Celebration</p><br>
+            <p>january 2019</p>
+            <p> republic Day</p>
+            <hr>
+            <h5 class="head">LKG Admission</h5><br>
+            <p>Result will be published on saturday,january 19 on the school website</p><br>
+            <h5 class="head1">Std XI Admission</h5><br>
+            <p>Entrance Test Date:Friday,january 11, 2019</p><br>
+            <p>Result: last day of ICSE(March 2019)</p><br>
+            <p>Write to us:</p><br>
+            <p class="para6">conventadmission@gmail.com</p><br>
+            <hr>
+        </div>
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
