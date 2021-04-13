@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<html>
+<head>
+    {% block title %}{{ title }}{% endblock title %}
+</head>
+<body>
+<br/>
+<div class="row">
+    <div class="col-md-12">
+<div class="overlay has-bg-img">
+    <img class="bg-img" src="{% static 'images/3.png' %}">
+</div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+                <div class="text">
+                    <i class="fa fa-image fa-5x fa-icon-image"></i>
+                    <p class="item-title">
+                    <h3> Designing</h3>
+                    </p><!-- /.item-title -->
+                    <p style="font-size:18.5px; font-style:sans-serif;">
+                        What we design is a direct reflection of your brand, we aim for each experience to be purposely
+                        built and engaging.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+                <div class="text">
+                    <i class="fa fa-lightbulb-o fa-5x fa-icon-image"></i>
+                    <p class="item-title">
+                    <h3> Developing</h3>
+                    </p><!-- /.item-title -->
+                    <p style="font-size:18.5px; font-style:sans-serif;">
+                        Robust, fast loading and cutting-edge websites that will work for you and bring you great
+                        results work for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+                <div class="text">
+                    <i class="fa fa-line-chart fa-5x fa-icon-image"></i>
+                    <p class="item-title">
+                    <h3>Analytics</h3>
+                    </p><!-- /.item-title -->
+                    <p style="font-size:17px; font-style:sans-serif;">
+                        Analytics is a consultative approach to engage business and technology stakeholders in defining their digital transformation journey across Big Data and analytics solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+                <div class="text">
+                    <i class="fa fa-mobile fa-5x fa-icon-image"></i>
+                    <p class="item-title">
+                    <h3>Mobil Apps</h3>
+                    </p><!-- /.item-title -->
+                    <p style="font-size:18px; font-style:sans-serif;">
+                        If you are aspiring to grow your business globally, you cannot afford to ignore the importance of android app/ios app development services for your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+                <div class="text">
+                    <i class="fa fa-money fa-5x fa-icon-image"></i>
+                    <p class="item-title">
+                    <h3> e-commerce</h3>
+                    </p><!-- /.item-title -->
+                    <p  style="font-size:18.5px; font-style:sans-serif;">
+                        If you are aspiring to grow your business globally, you cannot afford to ignore the importance of android app/ios app development services for your business.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+                <div class="text">
+                    <i class="fa fa-bullhorn fa-5x fa-icon-image"></i>
+                    <p class="item-title">
+                    <h3> Support</h3>
+                    </p><!-- /.item-title -->
+                    <p style="font-size:19px; font-style:sans-serif;">
+                        If you are aspiring to grow your business globally, you cannot afford to ignore the importance of android app/ios app development services for your business..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<hr />
+
+<div class="row">
+    <div class="col-sm-12 mt-3 mb-5 text-center">
+        <h2>Best Website Design And Development Company</h2>
+        <p class="para2">When it comes to finding the right Web Design and Development company for your business,<br /> going local doesn’t always make sense.</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">GET STARTED NOW</a>
+
+    </div>
+</div>
+{% block script %}
+{% endblock script %}
+</body>
+</html>
+
+
+{% endblock %}

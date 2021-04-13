@@ -1,0 +1,111 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+7       {{ page_title|default:"VS Cloud Tech" }}
+8       {% endblock title %}
+    </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   {% block css %}
+   {% endblock css %}
+</head>
+<body>
+<nav style="background-color:black;" class="navbar navbar-expand-lg navbar-dark p-4 fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ml-2" href="{% url 'home' %}"><img class="logo2" src="{% static 'images/dazzle.png' %}"/></a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item">
+                    <a class="nav-link mr-4" href="{% url 'home' %}">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-4" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-4" href="{% url 'services' %}">Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-4" href="{% url 'contact' %}">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block body_block %}
+{% endblock %}
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 style="font-size:17px; color:white;">Services</h3>
+                    <ul>
+                        <li><a style="font-size:15px; color:white;" href="#">Web design</a></li>
+                        <li><a style="font-size:15px; color:white;" href="#"> Web Development</a></li>
+                        <li><a style="font-size:15px; color:white;" href="#">Mobile App Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 style="font-size:17px; color:white;">About</h3>
+                    <ul>
+                        <li><a style="font-size:15px; color:white;" href="{% url 'home' %}">Company</a></li>
+                        <li><a style="font-size:15px; color:white;" href="{% url 'services' %}">Services</a></li>
+                        <li><a style="font-size:15px; color:white;" href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3 style="font-size:17px; color:white;">VS Cloud Tech</h3>
+                    <p style="font-size:17px; color:white;">VS Cloud Technologies is a global name in IT services,
+                        digital, and business solutions that
+                        partners with its clients to simplify,
+                        strengthen and transform their businesses.</p>
+                </div>
+                <div class="col item social"><a href="https://www.facebook.com/vscloudtech/"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon style="border-radius:100%;" size="large" name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon size="large" name="logo-github"></ion-icon></a>
+                        </div>
+            </div>
+            <p class="copyright">VS Cloud Tech © 2021</p>
+        </div>
+    </footer>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+
+<script>
+$(document).ready(function() {
+activeLinkControl()
+});
+
+function activeLinkControl() {
+$('.navbar-nav .nav-item .nav-link').click(function() {
+
+$(this).closest('.nav-item').siblings().removeClass('active')
+$(this).closest('.nav-item').addClass('active')
+
+});
+}
+
+</script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+

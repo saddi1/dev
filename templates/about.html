@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<br/>
+<html>
+<head>
+
+    {% block title %}{{ title }}{% endblock title %}
+</head>
+<body style="background-color:white;">
+<div class="row mt-4">
+<div class="col-md-12">
+    <img class="aboutimg" src="{% static 'images/aboutimg.jpg' %}" alt="about">
+</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 mt-3">
+        <div class="mt-2 p-0 border-0">
+            <h1 id="main1" class="card-header">About Us</h1>
+            <div class="card-body">
+                <p id="para" class="card-text">
+                    VS Cloud Technologies is a global name in IT services, digital, and business solutions that partners
+                    with its clients to simplify,
+                    strengthen and transform their businesses. We ensure the highest levels of certainty and
+                    satisfaction through a deep-set commitment
+                    to our clients and comprehensive industry expertise,<br/> <br/>and strong network of innovation and
+                    delivery centers.In order to enable faster and accurate decision making for the rapidly changing
+                    critical infrastructure sector and
+                    we have established a comprehensive system of analytic tool and platforms that can integrate and
+                    manage structured and an unstructured data.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 mt-4 h-75">
+        <div class="mt-0 pt-0 border-0">
+            <img class="aboutimg1" src="{% static 'images/aboutimg1.jpg' %}" alt="about">
+
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+<hr/>
+<div class="row">
+    <div class="col-sm-12 mt-3 text-center">
+        <h2>Mobile and Website Design/Development Company India</h2>
+        <br/>
+        <p class="para2">VS Cloud Technology delivers digital transformation and technology services from ideation to execution, enabling Global 50+ clients to outperform the competition.<br/> “Born digital,”VS CLoud Technology  takes an agile, collaborative approach to creating customized solutions across the digital value chain. <br/>We deliver branding to companies with our comprehensive planning and implementation of several Internet marketing strategies.</p>
+    </div>
+</div>
+
+<div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center">
+    <div class="hd">Why People Believe in us</div>
+    <p class="para2">Always render more and better service than is expected of you, no matter what your ask may be.</p>
+    <div class="row" style="justify-content: center">
+        <div class="card col-md-3 col-12">
+            <div class="card-content">
+                <div class="card-body"> <img class="img" src="{% static 'images/about3.png' %}" />
+                    <div class="shadow"></div>
+                    <div class="card-title"> Transparency </div>
+                    <div class="card-subtitle">
+                        <p class="para2">We believe, transparency in work helps in attaining desired outcome. We have a clear and focused approach towards our services and expertise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 col-12 ml-2">
+            <div class="card-content">
+                <div class="card-body"> <img class="img" src="{% static 'images/handshake.png' %}" />
+                    <div class="card-title"> Integrity </div>
+                    <div class="card-subtitle">
+                        <p class="para2"> We know the value of working together in a team. VS Cloud Technology owns strong moral principles and believes to facilitate best services to our clients. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 col-12 ml-2">
+            <div class="card-content">
+                <div class="card-body"> <img class="img rck" src="{% static 'images/startup.png' %}" />
+                    <div class="card-title"> Innovation </div>
+                    <div class="card-subtitle">
+                        <p class="para2">We opt for a distinct and unique vision before applying our technical expertise to work. We deliver innovative and unique services to every single client.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% block script %}
+{% endblock script %}
+</body>
+</html>
+
+{% endblock %}
